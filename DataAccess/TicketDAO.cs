@@ -11,6 +11,7 @@ namespace DataAccess;
     // filtering tickets by status
     // viewing all tickets
 
+/*
 public class TicketDAO {
     public List<Ticket> GetAllTickets(){
 
@@ -36,3 +37,4 @@ public class TicketDAO {
         
     }    
 }
+*/

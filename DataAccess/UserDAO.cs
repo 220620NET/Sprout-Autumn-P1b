@@ -32,7 +32,7 @@ public class UserDAO {
             while (reader.Read())
             {
                 Console.WriteLine("\t{0}\t{1}\t{2}\t{3}", reader[0], reader[1], reader[2], reader[3]);
-                users.Add(new User(reader[0], reader[1], reader[2], reader[3]));
+                users.Add(new User((int)reader[0], (string)reader[1], (string)reader[2], (string)reader[3]));
             }
             reader.Close();
             makeConnection.Close();
@@ -43,6 +43,7 @@ public class UserDAO {
         }
     }
 
+/*
     public bool CreateUser(User User){
 
     }
@@ -54,4 +55,5 @@ public class UserDAO {
     public List<User> GetUserByUserName(){
         
     }
+  */  
 }
