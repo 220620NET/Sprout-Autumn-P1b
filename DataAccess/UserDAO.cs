@@ -41,6 +41,7 @@ public class UserDAO {
         {
             Console.WriteLine(e.Message);
         }
+        return users;
     }
 
 /*
