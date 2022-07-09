@@ -1,0 +1,1 @@
+Building project from scratch with everything we've learned so it's built correctly, easily, from the start so I know how to do this.
