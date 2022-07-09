@@ -39,6 +39,4 @@ public class User
         ", Role: " + this.userRole;
     }
 
-
-
 }
