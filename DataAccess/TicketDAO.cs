@@ -2,6 +2,8 @@ using Models;
 
 namespace DataAccess;
 
+// The only purpose of DAO or DataAccess layer is to talk to the database
+
 // methods for 
     // update/process = approve or deny 
     // Get a ticket by ticketID
