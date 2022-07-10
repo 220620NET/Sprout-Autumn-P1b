@@ -51,7 +51,7 @@ public class TicketDAO {
         GetTickets(thoseAll);
         return allTickets;
     }    
-   
+/*   
     public string thoseStatusTickets = "select * from AutumnERS.tickets where status = '" + SocialServices.thatStatus + "';";
     public List<Ticket> GetTicketsByStatus(){
         List<Ticket> statusTickets = new List<Ticket>();
@@ -59,7 +59,7 @@ public class TicketDAO {
         return statusTickets;
     }    
 
-/*
+
     public bool CreateTicket(Ticket Ticket){
 
     }
