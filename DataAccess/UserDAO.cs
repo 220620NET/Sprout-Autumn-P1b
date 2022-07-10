@@ -1,5 +1,5 @@
 using Models;
-using Sensitive;
+using Services;
 using System.Data.SqlClient;
 
 namespace DataAccess;
@@ -12,7 +12,7 @@ namespace DataAccess;
 
 public class UserDAO {
 
-    string connectionString = "Server=tcp:autumn-server.database.windows.net,1433;Initial Catalog=AutumnDB;Persist Security Info=False;User ID=supremeadmin;Password=" + SensitiveVariables.dbpassword + ";MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
 
     public List<User> GetAllUsers(){
 
@@ -20,7 +20,7 @@ public class UserDAO {
 
         string getAllUsers = "select * from AutumnERS.users;";
 
-        SqlConnection makeConnection = new SqlConnection(connectionString);
+        SqlConnection makeConnection = new SqlConnection(SecretServices.connectionString);
 
         SqlCommand getEveryUser = new SqlCommand(getAllUsers, makeConnection);
 
