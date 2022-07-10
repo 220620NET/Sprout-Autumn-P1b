@@ -25,7 +25,7 @@ public class MainMenu
                 case "3": // Exit
                     Console.WriteLine("Goodbye.");
                     Environment.Exit(0);
-                break;
+                break;                
                 default:
                     Console.WriteLine("What kind of nonsense was that?");
                 break;
