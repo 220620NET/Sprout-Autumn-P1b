@@ -33,7 +33,7 @@ public class TicketDAO {
             while (reader.Read())
             {
                 Console.WriteLine("\t{0}\t{1}\t{2}\t{3}", reader[0], reader[1], reader[2], reader[3], reader[4], reader[5]);
-                tickets.Add(new Ticket((int)reader[0], (int)reader[1], (decimal)reader[2], (int)reader[3], (string)reader[4], (string)reader[5]));
+                tickets.Add(new Ticket((int)reader[0], (int)reader[1], (int)reader[2], (string)reader[3], (string)reader[4], (decimal)reader[5]));
             }
             reader.Close();
             makeConnection.Close();

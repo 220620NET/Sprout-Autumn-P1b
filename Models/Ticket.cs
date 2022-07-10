@@ -6,41 +6,45 @@ public class Ticket
 {
     public int ticketID {get; set;}
     public int author_fk {get; set;}
-    public decimal amount {get; set;}
     public int resolver_fk {get; set;}
-    public string status {get; set;}
     public string description {get; set;}
+    public string status {get; set;}
+    public decimal amount {get; set;}
+    
+    
+    
 
     // for retrieving objects from database
     public Ticket(
         int ticketID,
         int author_fk,
-        decimal amount,
         int resolver_fk,
+        string description,
         string status,
-        string description)
+        decimal amount)
     {
         this.ticketID = ticketID;
         this.author_fk = author_fk;
-        this.amount = amount;
         this.resolver_fk = resolver_fk;
-        this.status = status;
         this.description = description;
+        this.status = status;
+        this.amount = amount;
     }
 
     // for putting objects into database
     public Ticket(
         int author_fk,
-        decimal amount,
         int resolver_fk,
+        string description,
         string status,
-        string description)
+        decimal amount
+        )
     {
         this.author_fk = author_fk;
-        this.amount = amount;
         this.resolver_fk = resolver_fk;
         this.status = status;
         this.description = description;
+        this.amount = amount;
     }
 /*
     public enum status {
@@ -53,10 +57,10 @@ public class Ticket
     {
         return "ID: " + this.ticketID +
         ", Author: " + this.author_fk +
-        ", Amount: " + this.amount +
+        ", Manager: " + this.resolver_fk +
+        ", Status: " + this.status + 
         ", Description: " + this.description +
-        ", Status: " + this.status +               
-        ", Manager: " + this.resolver_fk;
+        ", Amount: " + this.amount;             
     }
 
 }
