@@ -15,15 +15,16 @@ namespace DataAccess;
 
 
 public class TicketDAO {
-    public List<Ticket> GetAllTickets(){
+    public string thoseAll = "select * from AutumnERS.tickets;";
+
+    public List<Ticket> GetTickets(string those)
+    {
 
         List<Ticket> tickets = new List<Ticket>();
 
-        string getAllTickets = "select * from AutumnERS.tickets;";
-
         SqlConnection makeConnection = new SqlConnection(SecretServices.connectionString);
 
-        SqlCommand getEveryTicket = new SqlCommand(getAllTickets, makeConnection);
+        SqlCommand getEveryTicket = new SqlCommand(those, makeConnection);
 
         try
         {
@@ -44,11 +45,21 @@ public class TicketDAO {
         }
         return tickets;
     }
-/*
-    public List<Ticket> GetTicketsByStatus(status){
 
+    public List<Ticket> GetAllTickets(){
+        List<Ticket> allTickets = new List<Ticket>();
+        GetTickets(thoseAll);
+        return allTickets;
+    }    
+   
+    public string thoseStatusTickets = "select * from AutumnERS.tickets where status = '" + SocialServices.thatStatus + "';";
+    public List<Ticket> GetTicketsByStatus(){
+        List<Ticket> statusTickets = new List<Ticket>();
+        GetTickets(thoseStatusTickets);
+        return statusTickets;
     }    
 
+/*
     public bool CreateTicket(Ticket Ticket){
 
     }
