@@ -20,7 +20,7 @@ public class UserDAO {
 
         string getAllUsers = "select * from AutumnERS.users;";
 
-        SqlConnection makeConnection = new SqlConnection(SecretServices.connectionString);
+        SqlConnection makeConnection = new SqlConnection(AuthServices.connectionString);
 
         SqlCommand getEveryUser = new SqlCommand(getAllUsers, makeConnection);
 

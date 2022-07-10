@@ -22,7 +22,7 @@ public class TicketDAO {
 
         List<Ticket> tickets = new List<Ticket>();
 
-        SqlConnection makeConnection = new SqlConnection(SecretServices.connectionString);
+        SqlConnection makeConnection = new SqlConnection(AuthServices.connectionString);
 
         SqlCommand getEveryTicket = new SqlCommand(those, makeConnection);
 
