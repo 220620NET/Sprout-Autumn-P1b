@@ -24,7 +24,7 @@ public class UserDAO
 
         List<User> thisUser = new List<User>();
         
-        string getThisUser = "select * from AutumnERS.users where userName = @userWanted;";
+        string getThisUser = "select * from AutumnERS.users where userName ='" + userWanted + "';";
 
         SqlConnection makeConnection = new SqlConnection(AuthServices.connectionString);
 
