@@ -18,7 +18,6 @@ public class MainMenu
             {
                 case "1": // Login
                     DisplayLoginUI();
-
                 break;
                 case "2": // register
                     DisplayRegisterUI();
@@ -41,6 +40,7 @@ public class MainMenu
         Console.WriteLine("Password, too: ");
         string password = Console.ReadLine ();
         Console.WriteLine("Welcome, " + userName + ".");
+        Environment.Exit(0); 
     }
 
     public void DisplayRegisterUI()
@@ -71,7 +71,7 @@ public class MainMenu
             break;
         }  
         // Console.WriteLine(maybeFirstName + " " + maybeLastName + " is a " + maybeRole + ".");
-        Console.WriteLine("userName: " + maybeUserName + ", password: " + password + ", Role: " + maybeRole + ".");
+        Console.WriteLine("userName: " + maybeUserName + ", password: " + maybePassword + ", Role: " + maybeRole + ".");
         Environment.Exit(0);   
     }    
 
@@ -85,11 +85,7 @@ public class MainMenu
 
 
     // MANAGER MENU
-    // Console.WriteLine("[1] View Entire User List");
-    // Console.WriteLine("[2] View Entire Ticket List");  
-    // Console.WriteLine("[3] View Ticket by TicketID");  
-    // Console.WriteLine("[4] View Tickets by UserName");
-    // Console.WriteLine("[5] View Tickets by Status");
+    // Console.WriteLine("[1] Resolve Tickets");
 
     // RESOLVE TICKETS MENU
     // Console.WriteLine("[1] View Entire User List");
