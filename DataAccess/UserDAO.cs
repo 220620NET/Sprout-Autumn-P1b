@@ -5,15 +5,26 @@ using System.Data.SqlClient;
 namespace DataAccess;
 // The only purpose of DAO or DataAccess layer is to talk to the database
 
-// Get User by userName method
-// Get User by userID method
-// Get all users method
-// Create User method
-
-public class UserDAO {
 
 
+public class UserDAO 
+{
 
+/*
+    // used by RegisterUser method in Services to put user into database
+    public bool CreateUser(User User){
+
+    }
+
+    public List<User> GetUserByID(){
+
+    }
+
+    public List<User> GetUserByUserName(){
+        
+    }
+    
+  */  
     public List<User> GetAllUsers(){
 
         List<User> users = new List<User>();
@@ -44,17 +55,5 @@ public class UserDAO {
         return users;
     }
 
-/*
-    public bool CreateUser(User User){
 
-    }
-
-    public List<User> GetUserByID(){
-
-    }
-
-    public List<User> GetUserByUserName(){
-        
-    }
-  */  
 }
