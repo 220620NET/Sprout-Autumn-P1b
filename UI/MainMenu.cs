@@ -13,11 +13,7 @@ public class MainMenu
             Console.WriteLine("[1] Login");
             Console.WriteLine("[2] Register");
             Console.WriteLine("[3] Exit");
-            // Console.WriteLine("[3] View User List");
-            // Console.WriteLine("[4] View Ticket List");
-            
             string input = Console.ReadLine();
-
             switch(input)
             {
                 case "1": // Login
@@ -86,5 +82,20 @@ public class MainMenu
 
     // TicketDAO claims = new TicketDAO();
     // claims.GetAllTickets();
+
+
+    // MANAGER MENU
+    // Console.WriteLine("[1] View Entire User List");
+    // Console.WriteLine("[2] View Entire Ticket List");  
+    // Console.WriteLine("[3] View Ticket by TicketID");  
+    // Console.WriteLine("[4] View Tickets by UserName");
+    // Console.WriteLine("[5] View Tickets by Status");
+
+    // RESOLVE TICKETS MENU
+    // Console.WriteLine("[1] View Entire User List");
+    // Console.WriteLine("[2] View Entire Ticket List");  
+    // Console.WriteLine("[3] View Ticket by TicketID");  
+    // Console.WriteLine("[4] View Tickets by UserName");
+    // Console.WriteLine("[5] View Tickets by Status");
 
 }
