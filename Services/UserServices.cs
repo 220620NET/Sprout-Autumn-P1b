@@ -5,9 +5,8 @@ namespace Services;
 
 public class UserServices
 {
-    // public User getUserByUserName(thatUser)
+    // public User getUserByUserName(string thatUser)
     // {
-    //     public User UserDAO.GetUserByUserName(thatUser);
 
     // }
 

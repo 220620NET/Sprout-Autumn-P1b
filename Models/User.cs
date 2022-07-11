@@ -31,6 +31,15 @@ public class User
         this.userRole = userRole;
     }
 
+    // for logging in
+    public User(           
+        string userName, 
+        string password)              
+    {
+        this.userName = userName;
+        this.password = password;
+    }    
+
     public override string ToString()
     {
         return "ID: " + this.userID +
